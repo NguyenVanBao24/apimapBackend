@@ -10,7 +10,7 @@ app.use(cors()); // Sử dụng cors để cho phép tất cả các origin
 app.use(express.json());
 
 // Sử dụng router
-app.use('/api/users', userRoutes);
+app.use('/', userRoutes);
 
 // Chạy server
 const PORT = process.env.PORT || 3000;
